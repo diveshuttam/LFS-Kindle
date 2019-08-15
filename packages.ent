@@ -123,7 +123,7 @@
 <!ENTITY dbus-md5 "2dbeae80dfc9e3632320c6a53d5e8890">
 <!ENTITY dbus-home "https://www.freedesktop.org/wiki/Software/dbus">
 <!ENTITY dbus-ch6-du "18 MB">
-<!ENTITY dbus-ch6-sbu "0.1 SBU">
+<!ENTITY dbus-ch6-sbu "0.2 SBU">
 
 <!ENTITY dejagnu-version "1.6.2">
 <!ENTITY dejagnu-size "514 KB">
@@ -381,11 +381,11 @@
 <!ENTITY less-ch6-sbu "less than 0.1 SBU">
 
 <!ENTITY lfs-bootscripts-version "20190524">      <!-- Scripts depend on this format -->
-<!ENTITY lfs-bootscripts-size "BOOTSCRIPTS-SIZE KB">        
+<!ENTITY lfs-bootscripts-size "32 KB">        
 <!ENTITY lfs-bootscripts-url "&downloads-root;lfs-bootscripts-&lfs-bootscripts-version;.tar.xz">
-<!ENTITY lfs-bootscripts-md5 "BOOTSCRIPTS-MD5SUM">  
+<!ENTITY lfs-bootscripts-md5 "c91b11e366649c9cec60c2552820fed5">  
 <!ENTITY lfs-bootscripts-home " ">
-<!ENTITY lfs-bootscripts-ch7-du "BOOTSCRIPTS-INSTALL-KB KB"> 
+<!ENTITY lfs-bootscripts-ch7-du "244 KB"> 
 <!ENTITY lfs-bootscripts-ch7-sbu "less than 0.1 SBU">
 
 <!ENTITY libcap-version "2.27">
@@ -634,8 +634,8 @@
 <!--<!ENTITY systemd-man-url  "&anduin-sources;/systemd-man-pages-&systemd-version;-&systemd-stable;.tar.xz">-->
 <!ENTITY systemd-man-url  "&anduin-sources;/systemd-man-pages-&systemd-version;.tar.xz">
 <!ENTITY systemd-man-md5  "6942e1a9032e19da6639f9705241d119">
-<!ENTITY systemd-ch6-du   "227 MB">
-<!ENTITY systemd-ch6-sbu  "0.4 SBU">
+<!ENTITY systemd-ch6-du   "226 MB">
+<!ENTITY systemd-ch6-sbu  "2.4 SBU">
 
 <!ENTITY sysvinit-version "2.95">
 <!ENTITY sysvinit-size "122 KB">
