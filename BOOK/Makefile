@@ -25,11 +25,13 @@ endif
 ifeq ($(REV), sysv)
   BASEDIR         ?= ~/lfs-book
   PDF_OUTPUT      ?= LFS-BOOK.pdf
+  MOBI_OUTPUT     ?= LFS-BOOK.mobi
   NOCHUNKS_OUTPUT ?= LFS-BOOK.html
   DUMPDIR         ?= ~/lfs-commands
 else
   BASEDIR         ?= ~/lfs-systemd
   PDF_OUTPUT      ?= LFS-SYSD-BOOK.pdf
+  MOBI_OUTPUT     ?= LFS-SYSD-BOOK.mobi
   NOCHUNKS_OUTPUT ?= LFS-SYSD-BOOK.html
   DUMPDIR         ?= ~/lfs-sysd-commands
 endif
@@ -64,6 +66,11 @@ book: validate profile-html
    done;
 
 	$(Q)$(MAKE) --no-print-directory wget-list md5sums
+
+mobi: book
+	@echo "Generating Mobi"
+	$(Q)zip -r $(RENDERTMP)/lfs-book.zip $(BASEDIR)
+	$(Q)ebook-convert $(RENDERTMP)/lfs-book.zip $(BASEDIR)/$(MOBI_OUTPUT)
 
 pdf: validate
 	@echo "Generating profiled XML for PDF..."
